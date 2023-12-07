@@ -6,6 +6,21 @@ body {
     font-size: 52px;
     font-style: italic;
 }
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    iframe{
+        margin-left: 2rem;
+        width: 80px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
 #navbarNavDropdown{
     justify-content: end;
 }
@@ -14,8 +29,25 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-    .container-fluid > a{
-        color: red;
-        margin: auto;
+    .navbar-brand{
+        font-size: 22px;
+        font-style: italic;
+    }
+    
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: auto;
+        iframe{
+            margin-left: 0rem;
+            width: 40px;
+            height: 50px;
+            object-fit: cover;
+        }
+        a{
+            text-align: center;
+        }
     }
 }

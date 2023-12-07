@@ -7,13 +7,45 @@ body {
   font-style: italic;
 }
 
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: auto;
+}
+#logo iframe {
+  margin-left: 2rem;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #navbarNavDropdown {
   justify-content: end;
 }
 
 @media only screen and (max-width: 768px) {
-  .container-fluid > a {
-    color: red;
-    margin: auto;
+  .navbar-brand {
+    font-size: 22px;
+    font-style: italic;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+  }
+  #logo iframe {
+    margin-left: 0rem;
+    width: 40px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #logo a {
+    text-align: center;
   }
 }/*# sourceMappingURL=index.css.map */
